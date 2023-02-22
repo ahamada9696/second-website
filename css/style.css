@@ -1,0 +1,1573 @@
+
+body{
+    perspective: 600px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    font-family: roboto , serif , sans-serif, Arial, Helvetica, sans-serif;
+
+}
+.headerparent{
+    width: 1300px;
+    height: 100px;
+    /* border: 1px dotted darkcyan; */
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.logo , .furniture , .armoires , .studytable , .plasticchairs , .wardropes , .more , .headericons , .cart {
+    /* border: 1px solid darkblue; */
+    position: relative;
+    width: 50px;
+    height: 90px;
+    flex-grow:1;
+    justify-content: space-around;
+    align-items: center;
+    transition: 2s;
+}
+.logo {
+    background-image: url(../images/logo\ \(1\).png);
+    background-repeat: no-repeat;
+    /* background-color: darkgoldenrod; */
+    background-size: contain;
+    background-position: center;
+    background-attachment: scroll;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    transform: scale(.9);
+}
+.headerparent a{
+    text-decoration: none;
+    font-size: 1.10rem;
+    /* line-height: 1rem; */
+    color: darkgoldenrod;
+    text-align: center;
+    font-family: roboto , serif , sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 25%;
+    /* transition: 1s; */
+  
+                  
+}
+
+.furniture{
+    margin-left: 5vw;
+}
+.furniture::after{
+    content: "";
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    left: -10px;
+    margin-top: 25px;
+    transition: 1s;
+    opacity: .9;
+  
+}
+.furniture:hover::after{
+    width: 97px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    /* transition: .5s; */
+}
+.furniture::before{
+    content: "";
+    width: 95px;
+    height: 00px;
+    position: absolute;
+    bottom: 14px;
+    left: -10px;
+    /* margin-top: 35px; */
+    transition: 1s;
+    opacity: .9;
+}
+.furniture:hover::before{
+    width: 95px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-left: 1px solid darkgoldenrod;
+    border-right: 1px solid darkgoldenrod;
+}
+/* @keyframes header{
+    0%{border: none;}
+    25%{border-left: 2px solid darkgoldenrod; border-right: 2px solid darkgoldenrod}
+    50%{border-bottom:2px solid darkgoldenrod ; border-top: 2px solid darkgoldenrod;}
+    75%{border:2px solid darkgoldenrod;}
+
+    100%{border: none}
+
+} */
+
+.armoires::after{
+    content: "";
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    left: -10px;
+    margin-top: 25px;
+    transition: 1s;
+    opacity: .9;
+  
+}
+.armoires:hover::after{
+    width: 97px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    /* transition: .5s; */
+}
+.armoires::before{
+    content: "";
+    width: 95px;
+    height: 00px;
+    position: absolute;
+    bottom: 14px;
+    left: -10px;
+    /* margin-top: 35px; */
+    transition: 1s;
+    opacity: .9;
+}
+.armoires:hover::before{
+    width: 95px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-left: 1px solid darkgoldenrod;
+    border-right: 1px solid darkgoldenrod;
+}
+
+.studytable::after{
+    content: "";
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    left: -10px;
+    margin-top: 25px;
+    transition: 1s;
+    opacity: .9;
+  
+}
+.studytable:hover::after{
+    width: 97px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    /* transition: .5s; */
+}
+.studytable::before{
+    content: "";
+    width: 95px;
+    height: 00px;
+    position: absolute;
+    bottom: 14px;
+    left: -10px;
+    /* margin-top: 35px; */
+    transition: 1s;
+    opacity: .9;
+}
+.studytable:hover::before{
+    width: 95px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-left: 1px solid darkgoldenrod;
+    border-right: 1px solid darkgoldenrod;
+}
+.plasticchairs::after{
+    content: "";
+    width: 0px;
+    height: 50px;
+    position: absolute;
+    left: -10px;
+    margin-top: 25px;
+    transition: 1s;
+    opacity: .9;
+  
+}
+.plasticchairs:hover::after{
+    width: 120px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    /* transition: .5s; */
+}
+.plasticchairs::before{
+    content: "";
+    width: 120px;
+    height: 00px;
+    position: absolute;
+    bottom: 14px;
+    left: -10px;
+    /* margin-top: 35px; */
+    transition: 1s;
+    opacity: .9;
+}
+.plasticchairs:hover::before{
+    width: 120px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-left: 1px solid darkgoldenrod;
+    border-right: 1px solid darkgoldenrod;
+}
+.wardropes::after{
+    content: "";
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    left: -10px;
+    margin-top: 25px;
+    transition: 1s;
+    opacity: .9;
+  
+}
+.wardropes:hover::after{
+    width: 97px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    /* transition: .5s; */
+}
+.wardropes::before{
+    content: "";
+    width: 95px;
+    height: 00px;
+    position: absolute;
+    bottom: 14px;
+    left: -10px;
+    /* margin-top: 35px; */
+    transition: 1s;
+    opacity: .9;
+}
+.wardropes:hover::before{
+    width: 95px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-left: 1px solid darkgoldenrod;
+    border-right: 1px solid darkgoldenrod;
+}
+.more::after{
+    content: "";
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    left: -30px;
+    margin-top: 25px;
+    transition: 1s;
+    opacity: .9;
+  
+}
+.more:hover::after{
+    width: 97px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    /* transition: .5s; */
+}
+.more::before{
+    content: "";
+    width: 95px;
+    height: 00px;
+    position: absolute;
+    bottom: 14px;
+    left: -30px;
+    /* margin-top: 35px; */
+    transition: 1s;
+    opacity: .9;
+}
+.more:hover::before{
+    width: 95px;
+    height: 50px;
+    /* margin-top: 30px; */
+    border-left: 1px solid darkgoldenrod;
+    border-right: 1px solid darkgoldenrod;
+}
+
+.aheader i {
+    margin-top: -15px;
+    font-size: 3.5rem;
+    color: darkred;
+}
+.aheader {
+    font-size: 1rem;
+}
+.headericons .aheader i{
+    font-size: 1.5rem;
+    margin: 7px;
+}
+
+/* .logo a img{
+   width: 90px;
+   height: 90px;
+   border-radius: 45px;
+   display: block;
+    margin: -30px auto;
+} */
+/* ///////////hidden list//////////////// */
+/* /* .furniture ul{
+    list-style: none;
+    display: none;
+    transition: 1s;
+}
+.furniture:hover ul {
+    display: block;
+    float: left;
+    /* position: absolute; */
+    /* margin-top:20vh ; */
+ * *
+.hiddenl{
+    width: 500px ;
+    height: 170px;
+    background-color:white;
+    border: 2px solid goldenrod;
+    float: left;
+    position: relative;
+    z-index: 400;
+    margin-left: 0px;
+    margin-top: 20px;
+/* visibility: hidden;     */
+    transform: scale(0);
+    opacity: 0;
+    transition: all .5s;
+}
+.furniture:hover .hiddenl{
+/* visibility: visible; */
+transform: scale(1);
+opacity: 1;
+
+}
+.hiddenli {
+    width: 150px;
+    height: 180px;
+    /* border: 2px solid darkblue; */
+    /* position: absolute; */
+    float: left;
+    margin: 5px;
+
+}
+.hiddenli ul{
+    list-style: none;
+}
+.hiddenli ul p {
+    color: darkgoldenrod;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-decoration:1px dotted underline;
+    font-weight: bold;
+
+
+}
+.hiddenli ul li {
+    font-size: 1.1rem;
+    margin-top: 2vh;
+    line-height: 1.1rem;
+    letter-spacing: .1rem;
+}
+/* ////////////////////////////srction1//////////////////////////////// */
+.section1{
+    width: 1300px;
+    height: 80vh;
+    /* border: 1px solid darkcyan; */
+    background-image: url(../images/photo-1634712282287-14ed57b9cc89\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+
+    position: relative;
+    margin: auto;
+
+}
+.section1p{
+    width: 35vw;
+    height: 40vh;
+    /* border: 1px solid darkcyan; */
+    font-size: 4rem;
+    color: darkgoldenrod;
+    font-family: roboto , serif , san-serif ,arial;
+    font-weight: bold;
+    direction: ltr;
+    position: absolute;
+    z-index: 2;
+    margin: 25vh 5vw;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.wooden {
+    /* animation: ch 2s both .2s infinite alternate alternate-reverse; */
+    animation-name: ch;
+    animation-duration: 50s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timeline:unset;
+    /* text-shadow: 1px 1px 5px  whitesmoke;     */
+
+}
+@keyframes ch{
+    /* text-shadow: 200px 200px 50px 50px darkkhaki; */
+    0%{ color: darkgoldenrod;}
+    10%{color: darksalmon;}
+    20%{color: beige;}
+    30%{color: bisque;}
+    40%{color: burlywood;}
+    50%{ color: darkgoldenrod;}
+    60%{color: linen;}
+    70%{ color: darkgrey;}
+    80%{color: silver;}
+    90%{color: wheat; }
+    100%{color: darkgoldenrod;}
+
+}
+.section1p input{
+    width: 8vw;
+    height: 5vh;
+    background-color: lightgrey;
+    position: absolute;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    z-index: 1;
+    margin: 30vh 0vw;
+    transition: .5s;
+}
+.shop:hover{
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+/* //////////////////////////////section2///////////////////////////////////// */
+.section2{
+    width: 1300px;
+    height: 100vh;
+    /* border: 1px solid darkcyan; */
+    margin: auto;
+    position: relative;
+}
+/* ////////////////////////////////// */
+
+
+.section2d1{
+    width: 1300px;
+    height: 20vh;
+    transition: all 2s;
+    /* border: 1px dashed darkorange; */
+    /* position: absolute; */
+    /* background-color: violet; */
+}
+/* .ucolor{
+    width: 10px;
+    height: 3px;
+    background-color: darkgray;
+    position: absolute;
+    float: left;
+    margin: 6vh auto;
+    left: 42vw;
+    top: 12vh;
+    transition: 2s;
+} */
+.ucolor{
+    width: 10px;
+    height: 3px;
+    background-color: darkred;
+    margin: auto;
+    transition: all 1s;
+     /* position: absolute;
+    left: 45vw; */
+}
+.section2d1:hover .ucolor{
+    width: 150px;
+    height: 3px;
+   
+}
+.section2d1 p{
+    font-size: 2rem;
+    color: darkgoldenrod;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding-top: 5vh;
+    /* background-color: darkcyan; */
+}
+/* .section2d1:hover .ucolor{
+    width:150px ;
+    height: 3px;
+    transition: 2s;
+} */
+/* ///////////////////////////// */
+
+.section2d3{
+    width: 1300px;
+    height: 80vh;
+    /* border: 1px dashed darkorange; */
+    /* position: absolute; */
+    /* background-color: black; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+/* //////////////////////////////// */
+.sec2d3d1 , .sec2d3d2 , .sec2d3d3 , .sec2d3d4{
+    flex-grow: 1;
+    /* border: 1px solid green; */
+    position: relative;
+    
+}
+
+.sec2d3d1img , .sec2d3d2img , .sec2d3d3img , .sec2d3d4img  {
+    width: 300px;
+    height: 60vh;
+    /* border: 1px solid goldenrod; */
+    position: absolute;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    margin: 10px;
+    transition: all 2s;
+}
+.sec2d3d1img:hover , .sec2d3d2img:hover , .sec2d3d3img:hover , .sec2d3d4img:hover  {
+    /* width: 320px;
+    height: 61vh; */
+    transform: rotatey(360deg);
+    /* transform: scale(1.1); */
+}
+.sec2d3d1img{
+    background-image: url(../images/category-banner4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.sec2d3d2img{
+    background-image: url(../images/category-banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.sec2d3d3img{
+    background-image: url(../images/category-banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.sec2d3d4img{
+    background-image: url(../images/category-banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.sec2d3d1p , .sec2d3d2p , .sec2d3d3p , .sec2d3d4p{
+        width: 300px;
+        height: 15vh;
+        border: 1px solid goldenrod;
+        position: absolute;
+        /* margin-left: 10px;
+        margin-top: 10px; */
+        margin: 10px;
+        bottom: 0%;
+      
+}
+.most{
+    padding-top: 20px;
+    font-size: 1rem;
+    color: gray;
+    font-weight: normal;
+    /* background-color: darkgoldenrod; */
+
+
+}
+.modern{
+    padding-top: 5px;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: serif , san-serif , arial ,roboto , ;
+    /* background-color: darkgoldenrod; */
+
+}
+.br{
+    width: 25px;
+    height: 25px;
+    background-color: brown;
+    position: absolute;
+    right: 0px;
+}
+.gthan{
+    width: 35px;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    margin: 2px;
+    background-color: bisque;
+    visibility: hidden;
+
+}
+.gthan i{
+    font-size: 2.5rem;
+    color: darkred;
+    margin-top: 30px;
+}
+.sec2d3d2p:hover .gthan , .sec2d3d1p:hover .gthan , .sec2d3d3p:hover .gthan 
+ , .sec2d3d4p:hover .gthan{
+    visibility: visible;
+}
+
+/* .br p{
+    margin-top: -10px;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    /* padding: -20px; */
+ *
+/* /////////////////////////////////////srction3//////////////////////////////////////////////////////////// */
+    .section3{
+        width: 1300px;
+        height: 100vh;
+        margin: auto;
+        /* border: 1px solid darkviolet; */
+        transition:all .8s;
+
+     
+    }
+    /* ////////////////// */
+    .sec3d1 {
+        width: 1300px;
+        height: 70vh;
+
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+
+        /* background-color: bisque; */
+    }
+
+
+    .sec3d1d1{
+        width: 30vw;
+        height: 70vh;
+        flex-grow: 2;
+        /* border: 1px solid darkviolet; */
+        flex-wrap: wrap;
+        /* flex-basis: 200px; */
+        margin: 10px;
+        margin-left: 0px;
+        /* background-color: lightgoldenrodyellow; */
+        background-image: url(../images/360_F_200080155_FBrIABz5nO3rz2Ay2Arf7ejKVccupVWu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .sec3d1d1 .name{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 10vw;
+        margin-top: 5vh;
+        color: darkgoldenrod;
+
+
+    }
+    
+    .sec3d1d1 .market{
+        font-size: 1rem;
+        margin-left: 10vw;
+        color: darkgoldenrod;
+
+    }
+
+    .sec3d1d1 .this{
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        line-height: 1.2rem;
+        margin-left: 10px;
+        margin-top: 20px;
+        /* color: rgb(180, 164, 15); */
+        color: darkgoldenrod;
+    }
+
+
+
+
+    .sec3d1d2{
+        width: 10vw;
+        height: 70vh;
+        flex-grow: 1;
+        /* border: 1px solid darkviolet; */
+        flex-wrap: wrap;
+        margin: 10px;
+        position: relative;
+        background-image: url(../images/cms-banner-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1s;
+
+    }
+    .sec3d1d3{
+        width: 10vw;
+        height: 70vh;
+        flex-grow: 1;
+        position: relative;
+        /* border: 1px solid darkviolet; */
+        margin: 10px;
+        margin-right: 0px;
+        flex-wrap: wrap;
+        background-image: url(../images/cms-banner-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all .8s;
+
+
+    }
+
+    .sec3d1d3:hover , .sec3d1d2:hover{
+        transform: scale(1.05);
+    }
+
+
+    .sec3d1d3div{
+        width: 250px;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        margin: 10px;
+        margin-left: 20px;
+        /* border: 1px solid darkblue; */
+    }
+    .discountp{
+        font-size: 1.25rem;
+        color: darkgoldenrod;
+        padding-top: 10px;
+    }
+    .interiorp{
+        font-size: 1.5rem;
+        color: black;
+        font-weight:bold;
+        letter-spacing: .1rem;
+    }
+    /* /////////////////// */
+    .sec3d2{
+        width: 1300px;
+        height: 25vh;
+        /* background-color: gray; */
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: row;
+        /* transition:all .8s; */
+    }
+    .sec3d2d1 , .sec3d2d2 , .zeft , .sec3d2d4 , .sec3d2d5{
+        /* flex-grow: 1; */
+        height: 23vh;
+         /* border: 1px dashed darkred; */
+         margin: 10px;
+         border-right: 2px solid darkgoldenrod;
+         position: relative;
+         flex-grow: 1;
+
+
+    } 
+    .sec3d2d1{
+        border-left: 2px solid darkgoldenrod;
+    }
+
+    /* .sec3d2d1 , .sec3d2d2 , .sec3d2d4 {
+        border-right: 1px solid darkgoldenrod;
+    } */
+/* /////////// */
+    .sec3d2icon1{
+        width:60px;
+        height: 60px;
+        position: absolute;
+        border-radius: 30px;
+        border: 1px solid darkgoldenrod;
+        /* margin: auto; */
+        margin-left:9vw;
+        margin-top: 5px;
+        background-image: url(../images/97f2df3f119a3f3c3e016446cbbfcc2a5a884e5a10a2a4220c0f0cda9ca22c70.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* transition: 1s; */
+        
+    }
+    .sec3d2icon1 img{
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        opacity: 0;
+        position: absolute;
+    }
+    .sec3d2icon1:hover .icon11{
+        opacity: 1;
+        transition: .8s;
+    }
+
+    /* //// */
+    .sec3d2icon2{
+        width:60px;
+        height: 60px;
+        position: absolute;
+        border-radius: 30px;
+        border: 1px solid darkgoldenrod;
+        /* margin: auto; */
+        margin-left:9vw;
+        margin-top: 5px;
+        background-image: url(../images/eagle.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* transition: 1s; */
+        
+    }
+    .sec3d2icon2 img{
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        opacity: 0;
+        position: absolute;
+    }
+    .sec3d2icon2:hover .icon11{
+        opacity: 1;
+        transition: 1s;
+    }
+/* //////////// */
+.sec3d2icon3{
+    width:60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 30px;
+    border: 1px solid darkgoldenrod;
+    /* margin: auto; */
+    margin-left:9vw;
+    margin-top: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transition: 1s; */
+    
+}
+.sec3d2icon3 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    opacity: 0;
+    position: absolute;
+}
+.sec3d2icon3:hover .icon11{
+    opacity: 1;
+    transition: 1s;
+}
+/* ////////////// */
+.sec3d2icon4{
+    width:60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 30px;
+    border: 1px solid darkgoldenrod;
+    /* margin: auto; */
+    margin-left:9vw;
+    margin-top: 5px;
+    background-image: url(../images/9efcde4c1cf1b36bf9033c63c3336492.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transition: 1s; */
+    
+}
+.sec3d2icon4 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    opacity: 0;
+    position: absolute;
+}
+.sec3d2icon4:hover .icon11{
+    opacity: 1;
+    transition: 1s;
+}
+/* /////////// */
+.sec3d2icon5{
+    width:60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 30px;
+    border: 1px solid darkgoldenrod;
+    /* margin: auto; */
+    margin-left:9vw;
+    margin-top: 5px;
+    background-image: url(../images/eagle-logo-design-vector_179537-62.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transition: 1s; */
+    
+}
+.sec3d2icon5 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    opacity: 0;
+    position: absolute;
+}
+.sec3d2icon5:hover .icon11{
+    opacity: 1;
+    transition: 1s;
+}
+/* //////////// */
+
+
+
+    .sec3d2icond{
+        width: 295px;
+        height: 50px;
+        background-color: rgb(197, 145, 12);
+        position: absolute;
+        bottom: 0px;
+        margin-top: 10px;
+        margin: 3px;
+        border: 1px solid darkgoldenrod;
+    }
+    .delivery{
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 5px;
+        letter-spacing: .1rem;
+        line-height: 1.2rem;
+    }
+    .shipping{
+        font-size: .8rem;
+        font-weight: normal;
+        text-align: center;
+        letter-spacing: .1rem;
+
+    }
+/* ///////////////////////////////////////section4////////////////////////////////////////////////////////// */
+    .section4{
+        width: 1300px;
+        height: 100vh;
+        /* border: 1px solid dodgerblue; */
+        margin: auto;
+        text-align: center;
+    }
+ 
+  
+.sec4p {
+    font-size: 2rem;
+    color: darkgoldenrod;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding-top: 2vh;
+}
+.ucolor2{
+    width: 10px;
+    height: 3px;
+    background-color: darkred;
+    margin: auto;
+    transition: all 1s;
+     /* position: absolute;
+    left: 45vw; */
+}
+.sec4d1:hover .ucolor2{
+    width: 150px;
+    height: 3px;
+   
+}
+
+/* //////////////////////// */
+    .sec4d1{
+        width: 1300px;
+        height: 10vh;
+        /* border: 1px solid green; */
+        margin: auto;
+        /* transition: all 2s; */
+    }
+/* ////////////////////// */
+.sec4d2{
+    width: 1300px;
+    height: 25vh;
+    /* background-color: gray; */
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sec4d2p1 , .sec4d2p2 , .sec4d2p3 , .sec4d2p4 {
+    width: 150px;
+    height: 50px;
+    /* flex-grow: 1; */
+     /* border: 1px dashed darkred; */
+     margin: 10px;
+     /* border-right: 2px solid darkgoldenrod; */
+     margin-top: 5vh;
+     font-size: 1.25rem;
+     font-weight: bold;
+} 
+/* /////////////////////// */
+.sec4d3{
+    width: 1300px;
+    height: 70vh;
+    margin: auto;
+    /* border: 1px dotted darkblue; */
+    margin-top: -50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.sec4d3d1 , .sec4d3d2 , .sec4d3d3  {
+    /* flex-grow: 1; */
+    /* border: 2px solid darkgoldenrod; */
+    flex-wrap: wrap;
+    min-height: 70vh;
+    min-width: 200px;
+
+}
+
+.sec4d3d1d1 , .sec4d3d2d1 , .sec4d3d3d1 {
+    width: 400px;
+    height: 50vh;
+    margin: 10px;
+    /* background-color: antiquewhite; */
+    position: relative;
+    transition: all 1s;
+    margin-top: 10px;
+    transform-style: preserve-3d;
+}
+/* .sec4d3d1d1{
+    background: url(../images/istockphoto-1415799772-170667a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.sec4d3d2d1{
+    background: url(../images/360_F_27339233_f2CRqTxzCq9YQzkoZmOVsoR2m3G6NZzs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.sec4d3d3d1{
+    background: url(../images/Best-Furniture-Hatil_0_0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} */
+
+.front{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkcyan; */
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+    background: url(../images/sky-blue-color.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.back{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkgoldenrod; */
+    position: absolute;
+    transform: rotateY(180deg);
+    background: url(../images/pngtree-italian-light-luxury-simple-fabric-living-room-sofa-image_562350.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+.front1{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkcyan; */
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+    background: url(../images/istockphoto-1269462887-170667a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.back1{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkgoldenrod; */
+    position: absolute;
+    transform: rotateY(180deg);
+    background: url(../images/p-464-pa-1415-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+.front2 , .frontt , .frontt1 , .frontt2{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkcyan; */
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+    background: url(../images/istockphoto-1415799772-170667a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.back2 , .backt , .backt1 , .backt2 {
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkgoldenrod; */
+    position: absolute;
+    transform: rotateY(180deg);
+    background: url(../images/Best-Furniture-Hatil_0_0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+.sec4d3d2d1:hover , .sec4d3d1d1:hover , .sec4d3d3d1:hover{
+    transform: rotateY(180deg);
+}
+
+
+/* /////////////////////// */
+.sec4d3d1d2 , .sec4d3d2d2 , .sec4d3d3d2 {
+    width: 400px;
+    height: 15vh;
+    background-color: beige;
+    margin: 10px;
+}
+.sicon{
+    text-align: left;
+    color: darkblue;
+    line-height: 30px;
+}
+.pname{
+    text-align: left;
+    color: black;
+    line-height: 30px;
+
+}
+.pprice{
+    text-align: left;
+    color: goldenrod;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 30px;
+    transition: 1s;
+}
+.pprice:hover{
+    font-size: 1.75rem;
+}
+.backicondiv{
+    width: 400px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    margin-top: 20vh;
+    opacity: .5;
+    transition: 1s;
+    background-color: black;
+}
+.backicondiv:hover{
+    opacity: 1;
+}
+.bicon{
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+}
+
+/* <!-- ////////////////////////////////////section5/4repeated/////////////////////////////////////////////// --> */
+
+.sec4d31{
+    width: 1300px;
+    height: 70vh;
+    margin: auto;
+    /* border: 1px dotted darkblue; */
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.sec4d3d1 , .sec4d3d2 , .sec4d3d3  {
+    /* flex-grow: 1; */
+    /* border: 2px solid darkgoldenrod; */
+    flex-wrap: wrap;
+    min-height: 70vh;
+    min-width: 200px;
+
+}
+
+.sec4d3d1d1 , .sec4d3d2d1 , .sec4d3d3d1 {
+    width: 400px;
+    height: 50vh;
+    margin: 10px;
+    /* background-color: antiquewhite; */
+    position: relative;
+    transition: all .4s;
+    margin-top: 10px;
+    transform-style: preserve-3d;
+}
+/* .sec4d3d1d1{
+    background: url(../images/istockphoto-1415799772-170667a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.sec4d3d2d1{
+    background: url(../images/360_F_27339233_f2CRqTxzCq9YQzkoZmOVsoR2m3G6NZzs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.sec4d3d3d1{
+    background: url(../images/Best-Furniture-Hatil_0_0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} */
+
+.frontt{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkcyan; */
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+    background: url(../images/360_F_352211795_ANL43s4YDe1CXdtjTa1DogJzZoze5w35.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.backt{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkgoldenrod; */
+    position: absolute;
+    transform: rotateY(180deg);
+    background: url(../images/360_F_27339233_f2CRqTxzCq9YQzkoZmOVsoR2m3G6NZzs.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+.frontt1{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkcyan; */
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+    background: url(../images/cabana_yeti_armchair_slideshow1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.backt1{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkgoldenrod; */
+    position: absolute;
+    transform: rotateY(180deg);
+    background: url(../images/33826-category-block-4-chairs-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+.frontt2{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkcyan; */
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+    background: url(../images/cattelan_furniture_tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.backt2{
+    width: 400px;
+    height: 50vh;
+    /* background-color: darkgoldenrod; */
+    position: absolute;
+    transform: rotateY(180deg);
+    background: url(../images/uncomplicated-and-fluid-designing-wellbeing-with-cattelan-italia_5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+.sec4d3d2d1:hover , .sec4d3d1d1:hover , .sec4d3d3d1:hover{
+    transform: rotateY(180deg);
+}
+
+
+/* /////////////////////// */
+.sec4d3d1d2 , .sec4d3d2d2 , .sec4d3d3d2 {
+    width: 400px;
+    height: 15vh;
+    background-color: beige;
+    margin: 10px;
+}
+.sicon{
+    text-align: left;
+    color: goldenrod;
+    line-height: 30px;
+}
+.pname{
+    text-align: left;
+    color: black;
+    line-height: 30px;
+
+}
+.pprice{
+    text-align: left;
+    color: goldenrod;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 30px;
+    transition: 1s;
+}
+.pprice:hover{
+    font-size: 1.75rem;
+}
+.backicondiv{
+    width: 400px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    /* margin-top: 20vh; */
+    opacity: .5;
+    transition: 1s;
+    bottom: 0;
+}
+.backicondiv:hover{
+    opacity: 1;
+}
+.bicon{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fab{
+    color: darkblue;
+}
+/* <!-- ////////////////////////////////////section6/footer/////////////////////////////////////////////// --> */
+.footer{
+    width: 1300px;
+    height: 99vh;
+    margin: auto;
+    /* border: 1p dashed darkred; */
+    background-image: url(../images/1676737372984.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 2s;
+
+}
+.subscribe{
+    width: 800px;
+    height: 150px;
+    position: absolute;
+    /* background-color: antiquewhite; */
+    left: 20vw;
+    z-index: 2;
+    top: 30vh;
+    display: flex;
+    flex-direction: row;
+    opacity: .9;
+        margin: auto;
+
+}
+.subscribe div{
+    flex-grow: 1;
+    /* border: 2px solid salmon; */
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    /* border: 1pc dotted darkgreen; */
+    margin: auto;
+    margin: 10px;
+    margin-left: 35px;
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: darkred;
+    transition: 1s;
+
+}
+.icon:hover{
+  transform: scale(1.1);
+    transition: 1s;
+}
+.iconname{
+    width: 100px;
+    height: 20px;
+    /* border: 1pc dotted darkblue; */
+    text-align: center;
+    color: darkred;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 10px;
+    /* transition:all 1s; */
+}
+.iconname a{
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+}
+
+
+
+.fa-ebay , .in3 , .fa-amazon , .fb3 , .fa-youtube{
+    margin-top: 20px;
+    color: darkgray;
+}
+
+.subscribe2{
+    width: 800px;
+    height: 30px;
+    position: absolute;
+    /* background-color: antiquewhite; */
+    left: 20vw;
+    z-index: 2;
+    /* margin: auto; */
+    top: 55vh;
+    display: flex;
+    flex-direction: row;
+    opacity: .9;
+    transition: all 1s;
+
+
+}
+.subscribe2 input{
+    width: 250px;
+    height: 25px;
+    display: inline;
+    /* margin-left: 20px; */
+    border: 2px solid darkred;
+    border-radius: 10px;
+    color: black;
+}
+.sub{
+    margin-left: 30px;
+    text-align: center;
+}
+.sub:hover{
+    letter-spacing: 1rem;
+    transition: 1s;
+    color: wheat;
+    background-color: darkred;
+    border: 1px solid wheat;
+}
+.lastlogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: auto;
+    border: 1px solid darkgoldenrod;
+    background-image: url(../images/eagle-logo-design_67734-198.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 10vh;
+    left: 43vw;
+}
+.lastlogo:hover{
+    /* transform: scale(2);
+    transition: 2s; */
+    transform: rotateY(3600deg);
+    transition: 20s;
+}
+.rights{
+    width: 1300px;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    background-color: burlywood;
+}
+.rights p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    color: darkgreen;
+}
+.rights p a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////// */
+
+/* .section2d4{
+    width:1300px;
+    height: 40vh;
+    border: 1px dashed deeppink;
+    position: absolute;
+    background-color: thistle;
+} */
